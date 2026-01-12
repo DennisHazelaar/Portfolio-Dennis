@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+portfolio_Dennis.egg-info/PKG-INFO
+portfolio_Dennis.egg-info/SOURCES.txt
+portfolio_Dennis.egg-info/dependency_links.txt
+portfolio_Dennis.egg-info/requires.txt
+portfolio_Dennis.egg-info/top_level.txt

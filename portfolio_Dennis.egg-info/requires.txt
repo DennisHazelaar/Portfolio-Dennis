@@ -1,0 +1,4 @@
+hyperopt>=0.2.7
+mads-datasets[torch]>=0.3.14
+mltrainer>=0.2.5
+tomlserializer>=0.2.0
