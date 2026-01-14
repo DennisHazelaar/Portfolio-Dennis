@@ -1,0 +1,15 @@
+{
+  "batch_size": 32,
+  "data_dir": "C:\\Users\\denni\\MADS\\Portfolio-Dennis\\data\\raw\\flowers",
+  "filters": 32,
+  "input_size": [
+    32,
+    3,
+    64,
+    64
+  ],
+  "lr": 0.0006840321320787567,
+  "n_classes": 102,
+  "units1": 256,
+  "units2": 128
+}

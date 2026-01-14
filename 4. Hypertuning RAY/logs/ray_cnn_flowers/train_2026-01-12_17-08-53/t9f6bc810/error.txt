@@ -1,0 +1,27 @@
+Failure # 1 (occurred at 2026-01-12_17-10-26)
+[36mray::ImplicitFunc.train()[39m (pid=49824, ip=127.0.0.1, actor_id=376dd599a0e7157dfcd633c801000000, repr=train)
+  File "python\\ray\\_raylet.pyx", line 1722, in ray._raylet.execute_task
+  File "python\\ray\\_raylet.pyx", line 1665, in ray._raylet.execute_task.function_executor
+  File "C:\Users\denni\MADS\Portfolio-Dennis\.venv\Lib\site-packages\ray\_private\function_manager.py", line 693, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denni\MADS\Portfolio-Dennis\.venv\Lib\site-packages\ray\util\tracing\tracing_helper.py", line 461, in _resume_span
+    return method(self, *_args, **_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denni\MADS\Portfolio-Dennis\.venv\Lib\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\denni\MADS\Portfolio-Dennis\.venv\Lib\site-packages\ray\air\_internal\util.py", line 98, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denni\MADS\Portfolio-Dennis\.venv\Lib\site-packages\ray\tune\trainable\function_trainable.py", line 44, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denni\MADS\Portfolio-Dennis\.venv\Lib\site-packages\ray\util\tracing\tracing_helper.py", line 461, in _resume_span
+    return method(self, *_args, **_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denni\MADS\Portfolio-Dennis\.venv\Lib\site-packages\ray\tune\trainable\function_trainable.py", line 249, in _trainable_func
+    output = fn()
+             ^^^^
+  File "c:\Users\denni\MADS\Portfolio-Dennis\4. Hypertuning RAY\hypertune flowers.py", line 23, in train
+    from model import CNN
+ModuleNotFoundError: No module named 'model'
