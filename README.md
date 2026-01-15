@@ -17,7 +17,7 @@ This website is built automatically using GitHub Pages. The main page you're rea
 1.  **[deployment](./5-Deployment/straattaal/summary.md)**
     * The result of my own deployment
 1.  **[Ethics](./6-Ethics/summary.md)**
-    * A critical analysis of the ethical implications of AI-driven camouflage.
+    * The result of the ethics assignments.
 
 
 
