@@ -1,0 +1,21 @@
+FROM raoulgrouls/torch-python-slim:py3.12-torch2.8.0-amd64-uv0.9.8
+
+WORKDIR /app
+
+# copy wheel
+COPY dist/slanggen-*.whl /tmp/slanggen.whl
+
+RUN uv pip install --system fastapi uvicorn beautifulsoup4
+
+COPY dist/slanggen-*.whl /tmp/
+RUN uv pip install --system /tmp/slanggen-*.whl
+
+# copy runtime files
+COPY backend/ backend/
+COPY static/ static/
+COPY artefacts/ artefacts/
+COPY assets/ assets/
+
+EXPOSE 80
+
+CMD ["python", "backend/app.py"]

@@ -14,7 +14,9 @@ from utils import sample_n
 
 logger.add("logs/app.log", rotation="5 MB")
 
-FRONTEND_FOLDER = Path("frontend").resolve()
+BASE_DIR = Path(__file__).resolve().parent.parent
+FRONTEND_FOLDER = BASE_DIR / "static"
+
 logger.info(f"Frontend folder set to {FRONTEND_FOLDER} and exists: {FRONTEND_FOLDER.exists()}")
 ARTEFACTS = Path("artefacts").resolve()
 model_state = {}
@@ -74,7 +76,11 @@ async def lifespan(app: FastAPI):
 app = FastAPI()
 
 # Serve static files
-app.mount("/static", StaticFiles(directory=str(FRONTEND_FOLDER)), name="static")
+app.mount(
+    "/static",
+    StaticFiles(directory=FRONTEND_FOLDER),
+    name="static",
+)
 
 model, tokenizer = load_model()
 starred_words = []
@@ -128,11 +134,9 @@ async def remove_starred_word(word: Word):
 async def health():
     return {"status": "ok"}
 
-
 @app.get("/")
-async def read_index():
-    logger.info("serving index.html")
-    return FileResponse("static/index.html")
+async def index():
+    return FileResponse(FRONTEND_FOLDER / "index.html")
 
 
 if __name__ == "__main__":

@@ -1,5 +1,9 @@
 # slanggen
 
+De applicatie is bereikbaar op:
+http://145.38.184.104/
+
+
 ## train the model
 
 First, build the environment with
