@@ -1,0 +1,8 @@
+version: "3.12"
+
+services:
+  straattaal:
+    image: straattaal-backend
+    restart: unless-stopped
+    ports:
+      - "80:80"
