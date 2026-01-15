@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Introduction
 
 Recurrent Neural Networks (RNNs) are widely used for sequential data because they can model temporal dependencies. However, standard RNN architectures often have difficulty learning local temporal patterns and may require large model sizes to perform well. The goal of this study was to improve the performance of a baseline RNN model and achieve a classification accuracy above 90%. Different model architectures were evaluated, including GRU and LSTM networks, as well as models that combine Conv1D layers with recurrent layers.

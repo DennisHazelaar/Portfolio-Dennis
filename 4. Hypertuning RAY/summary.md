@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## 1. Introduction
 Deep learning models involve many design choices, of which architectural decisions are among the most influential. While automated hyperparameter tuning methods can be useful, they may obscure the relationship between model capacity and performance if used without reflection. The goal of this assignment is therefore not to optimise performance, but to demonstrate a scientific approach to model design: formulating hypotheses based on theory, designing controlled experiments, analysing results, and iterating accordingly.
 In this study, I investigate how model capacity affects performance and generalization in a convolutional neural network (CNN) trained on the Flowers-102 dataset. The focus is placed on architectural hyperparameters, specifically the size of dense layers, while keeping optimization-related parameters fixed to maintain interpretability.

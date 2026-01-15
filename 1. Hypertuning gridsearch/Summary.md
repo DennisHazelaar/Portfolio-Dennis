@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Hypothesis
 
 I expected that different hyperparameters influence each other.
