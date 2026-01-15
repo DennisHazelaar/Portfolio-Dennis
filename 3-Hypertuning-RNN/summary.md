@@ -31,3 +31,5 @@ Increasing the number of recurrent layers beyond two did not lead to performance
 The final model consisted of a Conv1D layer followed by a GRU with a moderate hidden size and a small number of layers. This architecture achieved a test loss corresponding to an accuracy well above 90%.
 
 In conclusion, the experiments show that improving feature extraction using convolutional layers is more effective than increasing the size or depth of recurrent models. The combination of Conv1D and GRU layers provided the best balance between performance, simplicity, and training efficiency.
+
+[Go back to Homepage](../README.md)

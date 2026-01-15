@@ -58,3 +58,5 @@ The best performance is achieved with:
 
 More epochs, deeper models, or dropout do not improve generalisation in this case.
 This shows the importance of controlled experiments and critical evaluation instead of blindly increasing model complexity.
+
+[Go back to Homepage](../README.md)

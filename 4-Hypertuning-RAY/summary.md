@@ -43,3 +43,6 @@ Accuracy and loss trends are consistent, and no extreme overfitting is observed.
 The results support the hypothesis that increasing model capacity improves performance up to a point, after which gains diminish. The size of the first dense layer has the strongest influence on validation performance, while the second dense layer plays a more limited role.
 These findings align with theoretical expectations from the bias–variance trade-off. The experiment demonstrates how controlled architectural changes can be systematically analysed using a scientific approach. While absolute performance remains modest, the observed trends are clear and robust, providing meaningful insight into the relationship between model capacity and generalization.
 
+
+[Go back to Homepage](../README.md)
+

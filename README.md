@@ -8,7 +8,7 @@ This website is built automatically using GitHub Pages. The main page you're rea
 
 1.  **[Hyperparameter gridsearch](./1-Hypertuning-gridsearch/Summary.md)**
     * Summary of the first week
-1.  **[Hyperparameter mlflow](./2-Hypertuning-mlflow/summary.md)**
+1.  **[Hyperparameter mlflow](./2-Hypertuning-mlflow/mlflow.pdf)**
     * Summary of the second week
 1.  **[Hyperparameter rnn](./3-Hypertuning-RNN/summary.md)**
     * Summary of the third week
